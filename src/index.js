@@ -9,6 +9,7 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.use("/protected-route", authMiddleware, mainRoutes);
 app.use("/", frontendRoutes);
