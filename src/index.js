@@ -13,7 +13,9 @@ app.use("/", mainRoutes);
 app.use("/api/auth", authRoutes);
 
 app.get("/api/protected-route", authMiddleware, (req, res) => {
-  res.status(200).json({ message: "Rota protegida com sucesso." });
+  res
+    .status(200)
+    .json({ message: `Rota protegida com sucesso. Olá ${req.user.username}` });
 });
 
 app.listen(port, () => {
