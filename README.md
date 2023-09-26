@@ -59,6 +59,12 @@ A API estará acessível em `http://localhost:3000`.
 
 ## Exemplo de Uso
 
+Para acessar o front-end, em seu navegador abra:
+
+```
+http://localhost:3000
+```
+
 Para se registrar como um novo usuário:
 
 ```bash
