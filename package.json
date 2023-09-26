@@ -4,7 +4,8 @@
   "description": "Simple api to practice some auth stuff",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "migrate": "knex migrate:latest"
   },
   "repository": {
     "type": "git",
