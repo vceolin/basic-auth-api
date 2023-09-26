@@ -80,7 +80,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "seu-usuario",
 Para acessar uma rota protegida, inclua o token JWT no cabeçalho da solicitação:
 
 ```bash
-curl -H "Authorization: Bearer SEU_TOKEN_JWT" http://localhost:3000/api/protected-route
+curl -H "Authorization: Bearer SEU_TOKEN_JWT" http://localhost:3000/protected-route
 ```
 
 ## Licença

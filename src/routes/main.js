@@ -1,14 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const path = require("path");
 
 router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "login.html"));
-});
-
-router.get("/register", (req, res) => {
-  const registerPath = path.join(__dirname, "..", "views", "register.html");
-  res.sendFile(registerPath);
+  res
+    .status(200)
+    .json({ message: `Rota protegida com sucesso. Olá ${req.user.username}` });
 });
 
 module.exports = router;
